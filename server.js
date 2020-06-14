@@ -21,8 +21,6 @@ const usersController = require('./controllers/users.js')
 const db = mongoose.connection
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/'
 
-const user = {username: 'user', password: 'pass'}
-
 // Felt important. Might delete later...
 const whitelist = [
     'http:localhost:1985'
